@@ -1,0 +1,11 @@
+* {
+  font-family: Helvetica, sans-serif
+}
+
+.error {
+  color: red;
+}
+
+.success {
+  color: green;
+}
