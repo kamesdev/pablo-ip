@@ -16,6 +16,7 @@ fetch('https://api.db-ip.com/v2/free/self')
         const ips = JSON.parse(localStorage.getItem('ips'))
 
         const respond = document.querySelector('.respond')
+        const ipElement = document.querySelector('.ip')
 
         // check if ip is already in LS
         if (ips.includes(currentIp)) {
@@ -30,6 +31,8 @@ fetch('https://api.db-ip.com/v2/free/self')
           ips.push(currentIp)
 
         }
+
+        ipElement.textContent = currentIp
 
         localStorage.setItem('ips', JSON.stringify(ips))
       }
